@@ -5,95 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lamp </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <a class="header__logo">
-            <img class="header__logo-img" src="img/logo.svg" alt="Logo Ease">
-        </a>
-        <ul class="header__navigation navigation">
-            <li class="navigation__item">
-                <a href="#" class="navigation__link">Collections</a>
-            </li>
-            <li class="navigation__item">
-                <a href="#" class="navigation__link">Blog</a>
-            </li>
-            <li class="navigation__item">
-                <a href="#" class="navigation__link">About</a>
-            </li>
-            <li class="navigation__item">
-                <a href="#" class="navigation__link">Contacts</a>
-            </li>
-        </ul>
-    </header>
-    <main class="main">
-        <div class="main__left-side">
-            <section class="main__description">
-                <p class="main__text">
-                    Collection of lighting is inspired by the geometric works of the great Suprematist artists Kissitzky and Kazimir Malevich.                         
+    <div class="container">
+        <header class="header">
+            <a class="header__logo">
+                <img class="header__logo-img" src="img/logo.svg" alt="Logo Ease">
+            </a>
+            <ul class="header__navigation navigation">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Collections</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Blog</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">About</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Contacts</a>
+                </li>
+            </ul>
+        </header>
+        <main class="main">
+            <div class="main__left-side">
+                <section class="main__description">
+                    <p class="main__text">
+                        Collection of lighting is inspired by the geometric works of the great Suprematist artists Kissitzky and Kazimir Malevich.                         
+                    </p>
+                    <p class="main__text">
+                        Suprematism is a modernist movement in the art of the early twentieth century, focused on the basic geometric forms, such as circles, squares, lines and rectangles. The geometric structure of the lamps will always look like a small art objects in your house.       
+                    </p>
+                </section>
+                <section class="main__choice">
+                    <div class="main__lamp-desc">
+                        <p class="main__desc-item">
+                            <span class="main__decs-term">Material:</span>
+                            <span class="main__desc-value">Metal</span>
+                        </p>
+                        <p class="main__desc-item">
+                            <span class="main__decs-term">Dimensions (cm):</span>
+                            <span class="main__desc-value">H 45 x W 12 x D 12</span>
+                        </p>
+                        <p class="main__desc-item">
+                            <span class="main__decs-term">Net Weight:</span>
+                            <span class="main__desc-value">2,4 kg</span>
+                        </p>
+                        <p class="main__desc-item">
+                            <span class="main__decs-term">Electrification:</span><br>
+                            <span class="main__desc-value">LED 10W | G9 |  220-240V | 50 Hz</span>
+                        </p>
+                    </div>
+                    <p class="main__lamp">
+                        <img class="main__lamp-img" src="img/lamp-1.png" alt="Lamp">
+                    </p>
+                    <form class="main__form" method="GET" action="">
+                        <fieldset class="main__form-set main__form-set--top">
+                            <p class="main__form-wrap">
+                                <input class="main__form-radio visually-hidden" type="radio" name="lamp" id="lamp-1" value="lamp-1" checked>
+                                <label for="lamp-1" class="main__form-label"></label>
+                            </p>
+                            <p class="main__form-wrap">
+                                <input class="main__form-radio visually-hidden" type="radio" name="lamp" id="lamp-2" value="lamp-2">
+                                <label for="lamp-2" class="main__form-label"></label>
+                            </p>
+                            <p class="main__form-wrap">
+                                <input class="main__form-radio visually-hidden" type="radio" name="lamp" id="lamp-3" value="lamp-3">
+                                <label for="lamp-3" class="main__form-label"></label>
+                            </p>
+                        </fieldset>
+                        <fieldset class="main__form-set main__form-set--bottom">
+                            <p class="main__form-wrap">
+                                <input class="main__form-radio visually-hidden" type="radio" name="time" id="day" value="day" checked>
+                                <label for="day" class="main__form-lab"></label>
+                            </p>
+                            <p class="main__form-wrap">
+                                <input class="main__form-radio visually-hidden" type="radio" name="time" id="night" value="night">
+                                <label for="night" class="main__form-lab"></label>
+                            </p>
+                        </fieldset>
+                    </form>
+                </section>
+            </div>
+            <div class="main__right-side">
+                <p class="main__wrapper-img">
+                    <img src="img/room1x.jpg" srcset="img/room2x.jpg 2x" alt="Room">
                 </p>
-                <p class="main__text">
-                    Suprematism is a modernist movement in the art of the early twentieth century, focused on the basic geometric forms, such as circles, squares, lines and rectangles. The geometric structure of the lamps will always look like a small art objects in your house.       
+                <p class="main__changed-lamp">
+                    <img src="img/lamp-1.png" alt="lamp">
                 </p>
-            </section>
-            <section class="main__choice">
-                <div class="main__lamp-desc">
-                    <p class="main__desc-item">
-                        <span class="main__decs-term">Material:</span>
-                        <span class="main__desc-value">Metal</span>
-                    </p>
-                    <p class="main__desc-item">
-                        <span class="main__decs-term">Dimensions (cm):</span>
-                        <span class="main__desc-value">H 45 x W 12 x D 12</span>
-                    </p>
-                    <p class="main__desc-item">
-                        <span class="main__decs-term">Net Weight:</span>
-                        <span class="main__desc-value">2,4 kg</span>
-                    </p>
-                    <p class="main__desc-item">
-                        <span class="main__decs-term">Electrification:</span>
-                        <span class="main__desc-value">LED 10W | G9 |  220-240V | 50 Hz</span>
-                    </p>
-                </div>
-                <p class="main__lamp">
-                    <img class="main__lamp-img" src="img/lamp-1.png" alt="Lamp">
-                </p>
-                <form class="main__form" method="GET" action="">
-                    <fieldset class="main__form-set">
-                        <p class="main__form-wrap">
-                            <label for="lamp-1" class="visually-hidden">Lamp 1</label>
-                            <input class="main__form-radio" type="radio" name="lamp" id="lamp-1" value="lamp-1" checked>
-                        </p>
-                        <p class="main__form-wrap">
-                            <label for="lamp-2" class="visually-hidden">Lamp 2</label>
-                            <input class="main__form-radio" type="radio" name="lamp" id="lamp-2" value="lamp-2">
-                        </p>
-                        <p class="main__form-wrap">
-                            <label for="lamp-3" class="visually-hidden">Lamp 3</label>
-                            <input class="main__form-radio" type="radio" name="lamp" id="lamp-3" value="lamp-3">
-                        </p>
-                    </fieldset>
-                    <fieldset class="main__form-set">
-                        <p class="main__form-wrap">
-                            <label for="day" class="visually-hidden">Day</label>
-                            <input class="main__form-radio" type="radio" name="time" id="day" value="day" checked>
-                        </p>
-                        <p class="main__form-wrap">
-                            <label for="night" class="visually-hidden">Night</label>
-                            <input class="main__form-radio" type="radio" name="time" id="night" value="night">
-                        </p>
-                    </fieldset>
-                </form>
-            </section>
-        </div>
-        <div class="main__right-side">
-            <p class="main__wrapper-img">
-                <img src="img/room1x.jpg" srcset="img/room2x.jpg 2x" alt="Room">
-            </p>
-            <p class="main__changed-lamp">
-                <img src="img/lamp-1.png" alt="lamp">
-            </p>
-        </div>
-    </main>
+            </div>
+        </main>
+    </div>
 </body>
 </html>

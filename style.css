@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "SF-compact-display";
+    src: url("fonts/sf-compact-display-medium.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF-compact-display";
+    src: url("fonts/sf-compact-display-thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #DBEEEE;
+    font-family: "SF-compact-display", sans-serif;
+}
+
+.container {
+    padding: 3rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+}
+
+@media screen and (max-width: 798px) {
+    .header {
+        flex-direction: column;
+    }
+}
+
+.header__logo {
+    width: 21.9rem;
+    height: 4.5rem;
+}
+
+@media screen and (max-width: 798px) {
+    .header__logo {
+        margin-bottom: 3rem;
+    }
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+    }
+}
+
+
+.navigation__item {
+    margin-left: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+    .navigation__item {
+        margin-bottom: 2rem;
+    }
+}
+
+.navigation__link {
+    color: #3D9090;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.055em;
+}
+
+@media screen and (max-width: 798px) {
+    .navigation__link {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+    }
+}
+
+.main {
+    display: flex;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 1300px) {
+    .main {
+        flex-direction: column;
+    }
+}
+
+
+.main__left-side {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+    max-width: 50%;
+}
+
+@media screen and (max-width: 1300px) {
+    .main__left-side {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+.main__text {
+    font-weight: 100;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.055em;
+    margin-bottom: 3rem;
+    margin-right: 6.8rem;
+}
+
+@media screen and (max-width: 1300px) {
+    .main__text {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        margin-right: 0;
+    }
+}
+
+.main__description {
+    padding-bottom: 5rem;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.main__choice {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+    .main__choice {
+        flex-direction: column;
+    }
+}
+
+.main__lamp-desc {
+    position: relative;
+    left: -10%;
+    width: 45rem;
+    min-width: 45rem;
+    height: 45rem;
+    background-color: #F0E0C9;
+    border-radius: 50%;
+    padding-top: 5rem;
+    margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 800px) {
+    .main__lamp-desc {
+        left: 0;
+        min-width: auto;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+    }
+}
+
+.main__desc-item {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.055em;
+    text-align: left;
+    margin-bottom: 1rem;
+    padding-left: 20%;
+}
+
+.main__desc-value {
+    font-weight: 100;
+}
+
+.main__lamp {
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+
+@media screen and (max-width: 1000px) {
+    .main__lamp {
+        display: none;
+    }
+}
+
+.main__form {
+    background-color: #BDDDDD;
+    margin-bottom: auto;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.main__form-set {
+    border: none;
+}
+
+.main__form-set--top {
+    padding: 1.7rem;
+    padding-bottom: 2.8rem;
+}
+
+.main__form-set--top .main__form-wrap {
+    margin-bottom: 1.5rem;
+}
+
+.visually-hidden {
+    position: absolute;
+	font-size: 0;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	-webkit-clip-path: inset(100%);
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.main__form-label {
+    display: block;
+    min-width: 13rem;
+    min-height: 13rem;
+    border-radius: 1.4rem;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+@media screen and (max-width: 800px) {
+    .main__form-label {
+        width: 13rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.main__form-wrap:nth-child(1)  .main__form-label{
+    background-image: url(./img/label-1.png);
+}
+
+.main__form-wrap:nth-child(2)  .main__form-label{
+    background-image: url(./img/label-2.png);
+}
+
+.main__form-wrap:nth-child(3)  .main__form-label{
+    background-image: url(./img/label-3.png);
+}
+
+.main__form-radio:checked + .main__form-label {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.main__form-radio + .main__form-lab {
+    border: 1px solid transparent;
+}
+
+.main__form-radio:checked + .main__form-lab {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.main__form-set--bottom {
+    display: flex;
+}
+
+.main__form-lab {
+    display: block;
+    width: 8.3rem;
+    height: 7.6rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 800px) {
+    .main__form-set--bottom {
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+.main__form-wrap:nth-child(1)  .main__form-lab {
+    background-image: url(./img/sun.svg);
+    background-color: #FFF3DA;
+}
+
+.main__form-wrap:nth-child(2)  .main__form-lab {
+    background-image: url(./img/night.svg);
+    background-color: #94A6A6;
+}
+
+.main__wrapper-img img{
+    border-radius: 1.8rem;
+}
+
+.main__right-side {
+    max-width: 50%;
+    position: relative;
+}
+
+@media screen and (max-width: 1300px) {
+    .main__right-side {
+        max-width: 90%;
+        align-self: center;
+    }
+}
+
+.main__changed-lamp {
+    position: absolute;
+    top: 0;
+    width: 15rem;
+    height: 22rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .main__changed-lamp {
+        max-height: 20%;
+    }
+}
