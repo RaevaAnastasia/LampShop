@@ -199,7 +199,7 @@ body {
 .main__lamp {
     position: absolute;
     top: 0;
-    left: 30%;
+    left: 35%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -336,6 +336,7 @@ body {
     top: 0;
     width: 15rem;
     height: 22rem;
+
 }
 
 @media screen and (max-width: 1000px) {
