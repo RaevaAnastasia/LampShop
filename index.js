@@ -17,7 +17,7 @@ const firebaseConfig = {
     messagingSenderId: "657324544230",
     appId: "1:657324544230:web:fec56078c014bb3968ab27",
     measurementId: "G-5JHMWPLTDL"
-  };
+};
 
 firebase.initializeApp(firebaseConfig);
 
@@ -86,10 +86,14 @@ async function handleClickTop(event) {
     event.target.classList.add('main__form-label--checked');
     let id = event.target.getAttribute('for');
     let lamp = await getLampData(id);
-    addDescription(lamp);
-    changeBigImg(id);
-    changeSmallImg(id);
-    lampDesc.classList.add('animation__to-center');
+    changedImgWrapper.classList.add('animation__to-back');
+    setTimeout(() => {
+        changedImgWrapper.classList.remove('animation__to-back');
+        addDescription(lamp);
+        changeBigImg(id);
+        changeSmallImg(id);
+        lampDesc.classList.add('animation__to-center');
+    }, 3000);
 }
 
 function handleClickBottom(event) {
