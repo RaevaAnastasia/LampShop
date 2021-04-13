@@ -380,6 +380,13 @@ body {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .main__changed-lamp {
+        width: 8rem;
+        height: 11rem;
+    }
+}
+
 .animation__to-right {
     animation: moveRight 2s ease-out 0.5s both;
 }
